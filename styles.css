@@ -1,0 +1,56 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  text-align: center;
+  font-size: 1rem;
+  font-family: monospace;
+}
+.drumContainer {
+  background-image: url("./images/david-martin-6NpYOFB3VCI-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90%;
+  width: 90%;
+  padding: 0 3em;
+  display: grid;
+  grid-template-rows: 1;
+  grid-auto-flow: column;
+  align-items: center;
+  column-gap: 1em;
+}
+
+.item {
+  height: fit-content;
+  display: inline-block;
+  background-color: rgba(67, 42, 51, 0.5);
+  padding: 1em 0.5em;
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 1;
+  row-gap: 0.25em;
+  border-radius: 1em;
+  border: 2px solid black;
+  color: snow;
+  box-shadow: 0em 0em 0.5em 0.01em rgba(255, 255, 255, 0.75);
+
+  /*
+    transition: box-shadow ease-in-out 500ms, transform ease-in-out 1000ms;
+    */
+}
+
+.item kbd {
+  font-size: 1.5rem;
+}
+
+.item.pressed {
+  box-shadow: 0em 0em 0.5em 0.2em yellow;
+  transform: scale(1.1);
+}
